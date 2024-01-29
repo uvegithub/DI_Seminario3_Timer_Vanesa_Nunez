@@ -18,9 +18,9 @@ class Ejercicio_1 : AppCompatActivity() {
         numero=findViewById(R.id.cuenta)
 
 
-        var  cuenta = 20
+        var  cuenta = 10
 
-        val timer = object: CountDownTimer(2000, 1000) {
+        val timer = object: CountDownTimer(10000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 cuenta--
                 numero.text=cuenta.toString()

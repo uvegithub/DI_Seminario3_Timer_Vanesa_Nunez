@@ -4,32 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/blue">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ejercicio 1"
         android:id="@+id/boton_ejer1"
-
+        app:layout_constraintBottom_toTopOf="@id/boton_ejer2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:backgroundTint="@color/azul_claro"
         android:textSize="18dp"
-        android:onClick="iniciarActividadEjercicio1"/>
+        android:onClick="iniciarActividadEjercicio1"
+        android:layout_marginTop="100dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ejercicio 2"
         android:id="@+id/boton_ejer2"
-
+        app:layout_constraintBottom_toTopOf="@id/boton_ejer3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/boton_ejer1"
         android:backgroundTint="@color/azul_claro"
         android:textSize="18dp"
         android:onClick="iniciarActividadEjercicio2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 3"
+        android:id="@+id/boton_ejer3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boton_ejer2"
+        android:backgroundTint="@color/azul_claro"
+        android:textSize="18dp"
+        android:onClick="iniciarActividadEjercicio3"
+        android:layout_marginBottom="200dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
